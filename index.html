@@ -1,17 +1,110 @@
-<html>
-<head>
-<title>
-B R O A D
-</title>
-<style>
-body {
-  font-family: "Fira Sans", sans-serif;
-}
-</style>
-<body>
-<center>
-<h1 >B R O A D</h1>
-<a href="mailto:jeremy@broad.ca">CONTACT</a>
-</center>
-</body>
+<!DOCTYPE html>
+<html> 
+  <title>B R O A D</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+
+      body{
+        margin: 0;
+        background-color: #10141b;
+        color: #fff;
+        font-family: monospace, monospace;
+        overflow: hidden;
+      }
+
+      .center{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p{
+        font-size: 2em;
+        text-align: center;
+      }
+
+      .char{
+        font-size: 2em;
+        animation: an 500ms ease-out 1 both;
+        display: inline-block;
+      }
+      @keyframes an{
+        0% {
+          opacity: 0;
+          transform: perspective(10px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, -70deg);
+        }
+        60% {
+          opacity: 1;
+          transform: perspective(100px) translate3d(0, 0, 0) rotate3d(1, -1, 0, 12deg);
+        }
+        77% {
+          opacity: 1;
+          transform: perspective(300px) translate3d(0, 0, 0) rotate3d(1, -1, 0, 12deg);
+        }
+        84% {
+          opacity: 1;
+          transform: perspective(500px) translate3d(0, 0, 0) rotate3d(1, -1, 0, -9deg);
+        }
+        89% {
+          opacity: 1;
+          transform: perspective(500px) translate3d(0, 0, 0) rotate3d(1, -1, 0, 10deg);
+        }
+        93% {
+          opacity: 1;
+          transform: perspective(500px) translate3d(0, 0, 0) rotate3d(1, -1, 0, -7deg);
+        }
+        97% {
+          opacity: 1;
+          transform: perspective(500px) translate3d(0, 0, 0) rotate3d(1, -1, 0, 4deg);
+        }
+        99% {
+          opacity: 1;
+          transform: perspective(500px) translate3d(0, 0, 0) rotate3d(1, -1, 0, -2deg);
+        }
+        100% {
+          opacity: 1;
+          transform: perspective(500px) translate3d(0, 0, 0) rotate3d(1, -1, 0, 0deg);
+        }
+      }
+
+      .contact{
+        display: block;
+        z-index: 150;
+        bottom: 0;
+        right: 0;
+        text-align: right;
+        padding: 0.6rem;
+        font-size: 2em;
+
+      }
+
+      .contact a{
+        font-family:Arial, Helvetica, sans-serif;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        opacity: .5;
+        transition: opacity .3s;
+        text-decoration: none
+      }
+
+      .contact a:hover{
+        opacity: 1
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <p id="broad"><span class="char">B R O A D</span></p>
+      <div class="contact">
+        <a target="_blank" href="mailto:jeremy@broad.ca">C O N T A C T</a>
+      </div>
+    </div>
+  </body>
 </html>
